@@ -1,0 +1,15 @@
+{
+  "short_name": "TH_Portfolio",
+  "name": "Tuomas Hyttinen - Portfolio page",
+  "icons": [
+    {
+      "src": "LOGO.png",
+      "sizes": "",
+      "type": "LOGO.png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
