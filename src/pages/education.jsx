@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { CSSTransition } from "react-transition-group";
 import StudyCard from "../components/studyCard";
 
 class Education extends Component {

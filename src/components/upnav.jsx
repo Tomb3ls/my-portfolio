@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import LinkIcon from "./linkIcon";
 
 class UpNav extends Component {
   state = {

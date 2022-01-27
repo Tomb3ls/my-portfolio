@@ -1,22 +1,21 @@
 import React, { Component } from "react";
 import NavigationSelection from "./navigationSelection";
 import MediaQuery from "react-responsive";
-import { Dropdown } from "bootstrap";
 
 class NavigationSelections extends Component {
   state = {
     selectables: [
-      { name: "Home", icon: "bi-house", path: "/", time: 200 },
-      { name: "AboutMe", icon: "bi-person", path: "/AboutMe", time: 400 },
-      { name: "Skills", icon: "bi-gear", path: "/Skills", time: 600 },
+      { name: "Home", icon: "bi-house", path: "/my-portfolio", time: 200 },
+      { name: "AboutMe", icon: "bi-person", path: "/aboutme", time: 400 },
+      { name: "Skills", icon: "bi-gear", path: "/skills", time: 600 },
       {
         name: "Education",
         icon: "bi-mortarboard",
-        path: "/Education",
+        path: "/education",
         time: 800,
       },
-      { name: "GIT", icon: "bi-git", path: "/GIT", time: 1000 },
-      { name: "Contact", icon: "bi-telephone", path: "/Contact", time: 1200 },
+      { name: "Portfolio", icon: "bi-git", path: "/portfolio", time: 1000 },
+      { name: "Contact", icon: "bi-telephone", path: "/contact", time: 1200 },
     ],
   };
 

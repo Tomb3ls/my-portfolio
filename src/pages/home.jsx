@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import me from "../images/ME.jpg";
 import "../index.css";
-import LinkIcon from "../components/linkIcon";
 import { CSSTransition } from "react-transition-group";
 
 class Home extends Component {
@@ -30,7 +29,7 @@ class Home extends Component {
                 New technical applications and solutions inspired me and{" "}
                 <br></br>i'm constantly searching for new ideas. <br></br>
               </p>
-              <p>Hope you like my page!</p>
+              <p>Hope you like my page!!</p>
             </div>
           </div>
         </CSSTransition>

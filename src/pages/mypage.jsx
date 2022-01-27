@@ -39,13 +39,13 @@ class MyPage extends Component {
             <UpNav />
           </CSSTransition>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/AboutMe" element={<AboutMe />} />
-            <Route path="/Skills" element={<Skills />} />
-            <Route path="/Education" element={<Education />} />
-            <Route path="/GIT" element={<GIT />} />
-            <Route path="/Contact" element={<Contact />} />
-            <Route path="*" element={<ErrorPage />} />
+            <Route path="/my-portfolio" element={<Home />} />
+            <Route path="/aboutme" element={<AboutMe />} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="/education" element={<Education />} />
+            <Route path="/portfolio" element={<GIT />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<Home />} />
           </Routes>
         </div>
       </Router>
