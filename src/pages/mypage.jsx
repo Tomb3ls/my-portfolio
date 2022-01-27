@@ -17,7 +17,7 @@ class MyPage extends Component {
 
   render() {
     return (
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <div className="fullArea">
           <CSSTransition
             in={true}
@@ -39,7 +39,7 @@ class MyPage extends Component {
             <UpNav />
           </CSSTransition>
           <Routes>
-            <Route path="/my-portfolio" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/aboutme" element={<AboutMe />} />
             <Route path="/skills" element={<Skills />} />
             <Route path="/education" element={<Education />} />

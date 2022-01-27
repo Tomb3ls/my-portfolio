@@ -18,7 +18,7 @@ class Home extends Component {
           <div className="homeAreaContent">
             <img className="me" src={me} alt="Me" />
             <div className="homeTextArea">
-              <span className="hi">Hi! I'm</span>
+              <span className="hi">Hi there! I'm</span>
               <h2 className="name">TUOMAS HYTTINEN</h2>
               <div className="welcome">
                 <span> Welcome to my portfolio!</span>
@@ -29,7 +29,7 @@ class Home extends Component {
                 New technical applications and solutions inspired me and{" "}
                 <br></br>i'm constantly searching for new ideas. <br></br>
               </p>
-              <p>Hope you like my page!!</p>
+              <p>Hope you like my page!</p>
             </div>
           </div>
         </CSSTransition>

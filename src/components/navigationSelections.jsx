@@ -5,7 +5,7 @@ import MediaQuery from "react-responsive";
 class NavigationSelections extends Component {
   state = {
     selectables: [
-      { name: "Home", icon: "bi-house", path: "/my-portfolio", time: 200 },
+      { name: "Home", icon: "bi-house", path: "/", time: 200 },
       { name: "AboutMe", icon: "bi-person", path: "/aboutme", time: 400 },
       { name: "Skills", icon: "bi-gear", path: "/skills", time: 600 },
       {
