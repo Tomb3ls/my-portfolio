@@ -4,7 +4,7 @@ class GIT extends Component {
   state = {};
   render() {
     return (
-      <div className="contentAreaPortfolio">
+      <div className="contentAreaPortfolio defaultBackground">
         <h1 className="heading">This is my portfolio</h1>
         <p className="portfolioText">
           Here I present some of my own projects and school works with

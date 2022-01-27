@@ -64,7 +64,7 @@ class Skills extends Component {
 
   render() {
     return (
-      <div className="contentAreaAbout">
+      <div className="contentAreaSkills defaultBackground">
         <div className="whereWorked">
           <h1 className="heading">WERE HAVE I WORKED?</h1>
           <div className="workArea">

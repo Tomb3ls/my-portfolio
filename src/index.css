@@ -89,6 +89,11 @@ code {
   margin-bottom: 1em;
 }
 
+.hhorizmargin {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
 .copyright {
   grid-area: copyright;
   text-align: center;
@@ -144,6 +149,12 @@ code {
 }
 
 /*PAGE_STYLES*/
+.defaultBackground {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 1px;
+  box-shadow: 1px 1px 6px 10px rgba(0, 0, 0, 0.5);
+}
+
 .contentAreaHome {
   grid-area: contentArea;
   padding: 0;
@@ -205,11 +216,12 @@ code {
 .contentAreaAbout {
   grid-area: contentArea;
   overflow-y: auto;
-  width: 75vw;
-  margin-left: 8vw;
+  width: auto;
+  margin-left: 4vw;
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
+  justify-content: center;
 }
 
 .aboutMe {
@@ -308,6 +320,17 @@ code {
   font-size: 1.5em;
 }
 
+.contentAreaSkills {
+  grid-area: contentArea;
+  overflow-y: auto;
+  width: auto;
+  margin-left: 4vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: flex-start;
+}
+
 .workArea {
   background-color: rgba(131, 146, 155);
   height: auto;
@@ -324,17 +347,30 @@ code {
   gap: 2em;
 }
 
+.commonSkills {
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.whereWorked {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align:left;
+}
+
 .contentAreaEducation {
   grid-area: contentArea;
   overflow-y: auto;
   width: 75vw;
-  margin-left: 8vw;
+  margin-left: 4vw;
 }
 
 .education,
 .extraeducation {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 3em;
 }
@@ -343,17 +379,18 @@ code {
   grid-area: contentArea;
   overflow-y: auto;
   width: 75vw;
-  margin-left: 8vw;
+  margin-left: 4vw;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
+  justify-content: center;
 }
 
 .contentAreaPortfolio {
   grid-area: contentArea;
   overflow-y: auto;
   width: 75vw;
-  margin-left: 8vw;
+  margin-left: 4vw;
   display: grid;
 }
 
@@ -614,12 +651,12 @@ code {
   }
 }
 
-/*MOBILE LAYOUT*/
+/*=========================================== MOBILE LAYOUT ===========================================*/
 @media all and (max-width: 500px) {
   .fullArea {
     display: grid;
     grid-template-columns: 2vw auto 2vw;
-    grid-auto-rows: inherit 80vh 7vh 3vh;
+    grid-auto-rows: 12vh 78vh 7vh 3vh;
     grid-template-areas:
       "navigationBarM navigationBarM navigationBarM"
       ". contentArea  ."
@@ -644,17 +681,27 @@ code {
   .contentAreaEducation {
     grid-area: contentArea;
     overflow-y: auto;
-    width: inherit;
     margin: 0;
     padding: 0;
 
     height: auto;
-    width: fit-content;
+    width: inherit;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .education,
+  .extraeducation {
+    display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    align-items: center;
+    gap: 0em;
+    width: auto;
   }
 
   .scBackground {
@@ -716,6 +763,26 @@ code {
     border-radius: 50%;
     padding: 0vh;
     margin: 0;
+  }
+
+  .contentAreaSkills {
+    grid-area: contentArea;
+    overflow-y: auto;
+    width: auto;
+    height: auto;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .whereWorked {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    align-items: center;
+    text-align: center;
   }
 
   .technicalSkills {

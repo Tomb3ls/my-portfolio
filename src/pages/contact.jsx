@@ -5,7 +5,7 @@ class Contact extends Component {
   state = {};
   render() {
     return (
-      <div className="contentAreaContact">
+      <div className="contentAreaContact defaultBackground">
         <MessageMe></MessageMe>
       </div>
     );

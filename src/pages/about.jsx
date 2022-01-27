@@ -11,7 +11,7 @@ class AboutMe extends Component {
 
   render() {
     return (
-      <div className="contentAreaAbout">
+      <div className="contentAreaAbout defaultBackground">
         <div className="aboutMe">
           <img className="meImg" src={me} alt="Me" />
           <h1 className="heading aboutmeHeading">Shortly,</h1>

@@ -6,9 +6,9 @@ class Education extends Component {
 
   render() {
     return (
-      <div className="contentAreaEducation">
+      <div className="contentAreaEducation defaultBackground">
         <div>
-          <h1 className="heading">EDUCATION</h1>
+          <h1 className="heading hhorizmargin">EDUCATION</h1>
         </div>
         <div className="education">
           <StudyCard
@@ -34,7 +34,7 @@ class Education extends Component {
           />
         </div>
         <div style={{ marginTop: "4em" }}>
-          <h1 className="heading">OTHER</h1>
+          <h1 className="heading hhorizmargin">OTHER</h1>
         </div>
         <div className="extraeducation">
           <StudyCard
