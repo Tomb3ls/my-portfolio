@@ -1,13 +1,738 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.color-primary-0 {
+  color: #1f4b65;
+} /* Main Primary color */
+.color-primary-1 {
+  color: #5d8399;
+}
+.color-primary-2 {
+  color: #38637d;
+}
+.color-primary-3 {
+  color: #0b334b;
+}
+.color-primary-4 {
+  color: #021f30;
+}
+.color-primary-5 {
+  color: #e6ebef;
+}
+
+.color-secondary-1-0 {
+  color: #282d6e;
+} /* Main Secondary color (1) */
+.color-secondary-1-1 {
+  color: #6b70a6;
+}
+.color-secondary-1-2 {
+  color: #434888;
+}
+.color-secondary-1-3 {
+  color: #121751;
+}
+.color-secondary-1-4 {
+  color: #060934;
+}
+
+.color-secondary-2-0 {
+  color: #1e6f46;
+} /* Main Secondary color (2) */
+.color-secondary-2-1 {
+  color: #63a885;
+}
+.color-secondary-2-2 {
+  color: #398a61;
+}
+.color-secondary-2-3 {
+  color: #08522d;
+}
+.color-secondary-2-4 {
+  color: #00351a;
+}
+
+/*MAINPAGE LAYOUT*/
+.fullArea {
+  background-color: black;
+  background-image: url("./images/TAUSTA.JPG");
+  background-size: cover;
+
+  display: grid;
+  grid-template-columns: 10vw 65vw 20vw 5vw;
+  grid-auto-rows: 10vh 80vh 6vh 4vh;
+  grid-template-areas:
+    "navigationBar . navigationTop ."
+    "navigationBar contentArea contentArea ."
+    "navigationBar . . ."
+    "navigationBar copyright copyright .";
+}
+
+.fullArea p {
+  color: white;
+}
+
+.heading {
+  color: white;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.copyright {
+  grid-area: copyright;
+  text-align: center;
+  font-size: 0.6rem;
+  padding: 0;
+  margin: 0;
+}
+
+/*NAVIGATION-STYLES*/
+.navigationBar {
+  grid-area: navigationBar;
+}
+
+/*NAVIGATION ICONS*/
+
+.icon {
+  color: white;
+  font-size: 2em;
+  transition: all 300ms ease-in;
+  text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.icon:hover {
+  color: black;
+  transform: scale(1.3);
+  text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.75);
+}
+
+.active i,
+.like:active {
+  color: black;
+}
+
+.like:hover {
+  text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+  transform: scale(1.3);
+}
+
+.upnav {
+  grid-area: navigationTop;
+  background-color: rgba(31, 75, 101, 0.9);
+}
+
+/*LINKS*/
+.linkIcon {
+  font-size: 1.5em;
+  color: white;
+}
+
+.linkIcon:hover,
+.linkIcon:active {
+  color: black;
+}
+
+/*PAGE_STYLES*/
+.contentAreaHome {
+  grid-area: contentArea;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.homeAreaContent {
+  color: white;
+  display: grid;
+  width: fit-content;
+  height: fit-content;
+  grid-template-rows: 2vh auto 2vh;
+  grid-template-columns: auto;
+  grid-template-areas:
+    "img . ."
+    "img text ."
+    "img . .";
+  align-items: center;
+  justify-items: center;
+  background-color: rgba(131, 146, 155, 0.85);
+  border-radius: 10px;
+}
+
+.me {
+  grid-area: img;
+  max-height: 30vh;
+  max-width: 30vw;
+  border-radius: 50%;
+  padding: 0vh;
+  margin-left: 2vw;
+}
+
+.homeTextArea {
+  grid-area: text;
+  color: white;
+  align-items: center;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  font-size: 1em;
+}
+
+.hi {
+  font-size: 1em;
+}
+
+.name {
+  font-size: 2em;
+}
+
+.welcome {
+  font-size: 1em;
+  margin-bottom: 0.5em;
+}
+
+.contentAreaAbout {
+  grid-area: contentArea;
+  overflow-y: auto;
+  width: 75vw;
+  margin-left: 8vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.aboutMe {
+  display: grid;
+  grid-template-columns: auto auto 5vw;
+  grid-auto-rows: 12vh auto auto;
+  grid-template-areas:
+    "AMPicture AMHeading ."
+    "AMPicture AMContent ."
+    ". AMContent .";
+
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.meImg {
+  grid-area: AMPicture;
+  max-height: 30vh;
+  max-width: 30vw;
+  border-radius: 50%;
+  padding: 0vh;
+  margin-left: 2vw;
+  margin-top: 4vh;
+}
+
+.aboutmeHeading {
+  grid-area: AMHeading;
+  margin-left: 5vh;
+}
+
+.aboutmeText {
+  grid-area: AMContent;
+  font-size: 1em;
+  max-width: 70vh;
+  margin-left: 5vh;
+}
+
+.hobbies {
+  display: grid;
+  grid-template-columns: 30vw 5vw 25vw;
+  grid-auto-rows: auto;
+  grid-template-areas: "textArea . carouselArea";
+}
+
+.hobbiesText {
+  grid-area: textArea;
+}
+
+.hobbyCarousel {
+  grid-area: carouselArea;
+  max-height: 30vw;
+  padding: 0vh;
+}
+
+.allSkillsArea {
+  display: inline-flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 3em;
+}
+
+.skillArea {
+  background-color: rgba(131, 146, 155);
+  height: auto;
+  width: auto;
+  max-width: 25em;
+  border-radius: 10px;
+  border: 0.5em solid rgba(131, 146, 155);
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 1em;
+}
+
+.skillAreaLong {
+  background-color: rgba(131, 146, 155);
+  height: auto;
+  width: fit-content;
+  max-width: 40vw;
+  border-radius: 10px;
+  border: 0.5em solid rgba(131, 146, 155);
+
+  display: inline-flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 1em;
+}
+
+.skillHeading {
+  width: 20vw;
+  height: auto;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.workArea {
+  background-color: rgba(131, 146, 155);
+  height: auto;
+  width: fit-content;
+  max-width: 40vw;
+  border-radius: 10px;
+  border: 0.5em solid rgba(131, 146, 155);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 2em;
+}
+
+.contentAreaEducation {
+  grid-area: contentArea;
+  overflow-y: auto;
+  width: 75vw;
+  margin-left: 8vw;
+}
+
+.education,
+.extraeducation {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 3em;
+}
+
+.contentAreaContact {
+  grid-area: contentArea;
+  overflow-y: auto;
+  width: 75vw;
+  margin-left: 8vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.contentAreaPortfolio {
+  grid-area: contentArea;
+  overflow-y: auto;
+  width: 75vw;
+  margin-left: 8vw;
+  display: grid;
+}
+
+.portfolioText {
+  width: 50vw;
+}
+
+.portfolioWork {
+  color: white;
+  background-color: rgba(131, 146, 155, 0.8);
+  border-radius: 10px;
+
+  display: grid;
+  grid-template-columns: 30vw auto;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "workHeading ."
+    "workImg workTxt";
+}
+
+.projectHeading {
+  grid-area: workHeading;
+  margin: 1vw;
+}
+
+.portfolioWork > img {
+  grid-area: workImg;
+  max-width: 29vw;
+  margin: 1vw;
+}
+
+.portfolioProjectDetails {
+  grid-area: workTxt;
+  margin: 1vw;
+}
+
+/*EFFECTS AND TRANSITION ON THE PAGE*/
+.fade-appear {
+  opacity: 0;
+  transform: scale(0.2);
+}
+.fade-appear-active {
+  opacity: 1;
+  transform: scale(0.1);
+  transition: opacity 1000ms ease-in;
+}
+
+.mainenter-appear {
+  opacity: 0;
+}
+
+.mainenter-appear-active {
+  opacity: 1;
+  transition: opacity 1000ms ease-in;
+  /*transition-delay: 1s;*/
+}
+
+.navicon-appear {
+  opacity: 0;
+  transform: scale(0.2);
+}
+
+.navicon-appear-active {
+  opacity: 1;
+  transform: scale(0.1);
+  transition: opacity 300ms ease-in;
+  transition-delay: 0.5s;
+}
+
+.naventer-appear {
+  opacity: 0.01;
+  transform: translate(-100%, 0);
+}
+.naventer-appear-active {
+  opacity: 1;
+  transform: translate(0, 0);
+  transition: all 300ms ease-in;
+}
+
+.upnaventer-appear {
+  opacity: 0.01;
+  transform: translate(100%, 0);
+}
+.upnaventer-appear-active {
+  opacity: 1;
+  transform: translate(0, 0);
+  transition: all 300ms ease-in;
+  transition-delay: 1.5s;
+}
+
+.skillCard-appear,
+.jobCard-appear {
+  opacity: 0.01;
+  transform: translate(-100%, 0);
+}
+
+.skillCard-appear-active,
+.jobCard-appear-active {
+  opacity: 1;
+  transform: translate(0, 0);
+  transition: all 300ms ease-in;
+}
+
+.glow-element {
+  transition: all 0.3s ease-in-out;
+}
+
+.glow-element:hover {
+  box-shadow: 0 5px 10px rgba(255, 255, 255, 1);
+  transform: translate(-1%, 0);
+}
+
+.boxShadow {
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.25);
+}
+
+/*======================================== RESPONSIVE LAYOUTS ========================================*/
+
+/*PAD LAYOUT*/
+@media all and (max-width: 850px) {
+  .fullArea {
+    background-color: black;
+    background-image: url("./images/TAUSTA.JPG");
+    background-size: cover;
+
+    display: grid;
+    grid-template-columns: inherit 40vw 39vw 1vw;
+    grid-auto-rows: 10vh 80vh 7vh 3vh;
+    grid-template-areas:
+      "navigationBar . navigationTop ."
+      "navigationBar contentArea contentArea ."
+      "navigationBar . . ."
+      "navigationBar copyright copyright .";
+  }
+
+  .fullArea p {
+    color: white;
+    font-size: 0.9em;
+  }
+
+  .icon {
+    font-size: 1.5em;
+  }
+
+  .homeAreaContent {
+    color: white;
+    display: grid;
+    width: fit-content;
+    height: fit-content;
+    grid-template-rows: auto auto 2vh;
+    grid-template-columns: 5vw 50vw 5vw;
+    grid-template-areas:
+      ". img ."
+      ". text .";
+    align-items: center;
+    justify-items: center;
+    background-color: rgba(131, 146, 155, 0.85);
+    border-radius: 10px;
+
+    padding-top: 2em;
+  }
+
+  .homeAreaContent > h2 {
+    font-size: 1em;
+  }
+
+  .hi {
+    font-size: 0.75em;
+  }
+
+  .name {
+    font-size: 1em;
+    margin-top: 0.75em;
+  }
+
+  .welcome {
+    font-size: 0.75em;
+    margin-bottom: 1em;
+  }
+
+  .aboutMe {
+    display: grid;
+    grid-template-columns: 0vw auto 5vw;
+    grid-auto-rows: auto auto auto;
+    grid-template-areas:
+      ". AMPicture ."
+      ". AMHeading ."
+      ". AMContent .";
+
+    justify-items: center;
+    align-items: center;
+  }
+
+  .aboutmeHeading {
+    margin-left: 0vh;
+  }
+
+  .aboutmeText {
+    margin-left: 0vh;
+  }
+
+  .hobbies {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "carouselArea"
+      "textArea";
+  }
+
+  .hobbyCarousel {
+    grid-area: carouselArea;
+    max-height: 100%;
+    padding: 0;
+    display: flex;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
+  .workArea {
+    height: auto;
+    width: fit-content;
+    max-width: 70vw;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .me {
+    display: flex;
+  }
+
+  .skillArea {
+    height: auto;
+    width: fit-content;
+    max-width: 70vw;
+  }
+
+  .skillAreaLong {
+    height: auto;
+    width: fit-content;
+    max-width: 70vw;
+  }
+
+  .portfolioWork {
+    width: 70vw;
+    display: grid;
+    grid-template-columns: 2vw auto 2vw;
+    grid-template-rows: auto;
+    grid-template-areas:
+      ". workHeading ."
+      ". workImg ."
+      ". workTxt .";
+  }
+
+  .portfolioWork > img {
+    max-width: 60vw;
+    margin: 0vw;
+  }
+}
+
+/*MOBILE LAYOUT*/
+@media all and (max-width: 500px) {
+  .fullArea {
+    display: grid;
+    grid-template-columns: 2vw auto 2vw;
+    grid-auto-rows: inherit 80vh 7vh 3vh;
+    grid-template-areas:
+      "navigationBarM navigationBarM navigationBarM"
+      ". contentArea  ."
+      ". navigationTop  ."
+      ". copyright .";
+  }
+
+  .upnav {
+    grid-area: navigationTop;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .navigationBar {
+    grid-area: navigationBarM;
+  }
+
+  .icon {
+    font-size: 1.5em;
+  }
+
+  .contentAreaEducation {
+    grid-area: contentArea;
+    overflow-y: auto;
+    width: inherit;
+    margin: 0;
+    padding: 0;
+
+    height: auto;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .scBackground {
+    transform: scale(0.8);
+  }
+
+  .contentAreaPortfolio {
+    overflow-y: auto;
+    width: auto;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .portfolioText {
+    width: auto;
+    margin-bottom: 3em;
+  }
+
+  .portfolioWork {
+    width: auto;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contentAreaContact {
+    width: auto;
+    margin-left: 0vw;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .aboutMe {
+    margin: 0;
+    padding: 0;
+    grid-template-columns: auto auto auto;
+    grid-auto-rows: auto auto auto;
+  }
+
+  .contentAreaAbout {
+    grid-area: contentArea;
+    overflow-y: auto;
+    width: auto;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .meImg {
+    grid-area: AMPicture;
+    max-height: 30vh;
+    max-width: 30vw;
+    border-radius: 50%;
+    padding: 0vh;
+    margin: 0;
+  }
+
+  .technicalSkills {
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .allSkillsArea {
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .commonSkills {
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+  }
 }
