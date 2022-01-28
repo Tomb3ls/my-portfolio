@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import NavigationBar from "../components/navigation";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route,} from "react-router-dom";
 import { CSSTransition } from "react-transition-group";
 import Home from "./home";
 import AboutMe from "./about";
@@ -10,9 +10,15 @@ import Contact from "./contact";
 import ErrorPage from "./errorpage";
 import Skills from "./skills";
 import UpNav from "../components/upnav";
+import ReactGA from 'react-ga';
 
 class MyPage extends Component {
   state = {
+  };
+
+  componentDidMount(){
+    ReactGA.initialize('G-0GBZBJ9J28');
+    ReactGA.pageview(window.location.pathname + window.location.search);
   };
 
   render() {
