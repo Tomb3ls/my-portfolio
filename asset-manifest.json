@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.68ed52d8.css",
-    "main.js": "/my-portfolio/static/js/main.e9685ff8.js",
+    "main.css": "/my-portfolio/static/css/main.721441e7.css",
+    "main.js": "/my-portfolio/static/js/main.600d48b2.js",
     "static/js/787.65557d19.chunk.js": "/my-portfolio/static/js/787.65557d19.chunk.js",
+    "static/media/welcome.mov": "/my-portfolio/static/media/welcome.7866632e77fbb0e6d168.mov",
     "static/media/JEMO.jpg": "/my-portfolio/static/media/JEMO.568d30e9feba312863d4.jpg",
     "static/media/BIKE.jpg": "/my-portfolio/static/media/BIKE.fa714a5d1cb8cbcb60f5.jpg",
     "static/media/STUDIO.jpg": "/my-portfolio/static/media/STUDIO.3cce288c57c5cbb2b82d.jpg",
@@ -13,12 +14,12 @@
     "static/media/bootstrap-icons.woff2?": "/my-portfolio/static/media/bootstrap-icons.2b56e79ae5013246de29.woff2",
     "static/media/exam.png": "/my-portfolio/static/media/exam.7b7b251e158831edf88f.png",
     "index.html": "/my-portfolio/index.html",
-    "main.68ed52d8.css.map": "/my-portfolio/static/css/main.68ed52d8.css.map",
-    "main.e9685ff8.js.map": "/my-portfolio/static/js/main.e9685ff8.js.map",
+    "main.721441e7.css.map": "/my-portfolio/static/css/main.721441e7.css.map",
+    "main.600d48b2.js.map": "/my-portfolio/static/js/main.600d48b2.js.map",
     "787.65557d19.chunk.js.map": "/my-portfolio/static/js/787.65557d19.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.68ed52d8.css",
-    "static/js/main.e9685ff8.js"
+    "static/css/main.721441e7.css",
+    "static/js/main.600d48b2.js"
   ]
 }
