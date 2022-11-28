@@ -14,23 +14,23 @@ class Education extends Component {
           <StudyCard
             time={200}
             icon="bi-mortarboard"
-            school="Jyväskylän yliopisto"
+            school="University of Jyväskylä"
             years="2020 - Present"
-            program="Tietojärjestelmätieteen kandidaatti- ja maisteri koulutus"
+            program="Information systems sciense"
           />
           <StudyCard
             time={300}
             icon="bi-mortarboard"
             school="Jyväskylän ammattiopisto"
             years="2013 - 2015"
-            program="Muusikon koulutus, lyömasoittimet"
+            program="Musician, drums and percussions"
           />
           <StudyCard
             time={400}
             icon="bi-mortarboard"
-            school="Vammalan Lukio"
+            school="Vammala High School"
             years="2008-2011"
-            program="Ylioppilastutkinto"
+            program="Matriculation examination"
           />
         </div>
         <div style={{ marginTop: "4em" }}>

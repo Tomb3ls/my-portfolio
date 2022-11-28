@@ -7,18 +7,11 @@ import AboutMe from "./about";
 import Education from "./education";
 import GIT from "./git";
 import Contact from "./contact";
-import ErrorPage from "./errorpage";
 import Skills from "./skills";
 import UpNav from "../components/upnav";
-import ReactGA from 'react-ga';
 
 class MyPage extends Component {
   state = {
-  };
-
-  componentDidMount(){
-    ReactGA.initialize('G-0GBZBJ9J28');
-    ReactGA.pageview(window.location.pathname + window.location.search);
   };
 
   render() {
@@ -36,14 +29,7 @@ class MyPage extends Component {
           <div className="copyright">
             <p style={{margin: '0', padding:'0'}}>© Tuomas Hyttinen, 2022</p>
           </div>
-          <CSSTransition
-            in={true}
-            timeout={300}
-            classNames="upnaventer"
-            appear={true}
-          >
-            <UpNav />
-          </CSSTransition>
+          
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/aboutme" element={<AboutMe />} />

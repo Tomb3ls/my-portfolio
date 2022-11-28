@@ -7,6 +7,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+div, p, a, h1, h2, h3, h4 {
+  font-family: sans-serif;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -151,8 +155,12 @@ code {
 /*PAGE_STYLES*/
 .defaultBackground {
   background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 1px;
-  box-shadow: 1px 1px 6px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 0.25px;
+  box-shadow: 1px 1px 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+.defaultPic {
+  border-radius: 1em;
 }
 
 .contentAreaHome {
@@ -188,6 +196,14 @@ code {
   max-width: 30vw;
   border-radius: 50%;
   padding: 0vh;
+  margin-left: 2vw;
+}
+
+.welcomeVid {
+  grid-area: img;
+  max-height: 30vh;
+  max-width: 30vw;
+  border-radius: 1em;
   margin-left: 2vw;
 }
 
@@ -386,12 +402,36 @@ code {
   justify-content: center;
 }
 
+.contactCard {
+  text-align: center;
+}
+
+.meContactCard {
+  max-height: 30vh;
+  max-width: 30vw;
+  border-radius: 50%;
+  padding: 0;
+  margin-bottom: 1em;
+}
+
+.contactCardFindMe {
+  padding: 0;
+  margin: 0;
+}
+
+.contactCardIcons {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+}
+
 .contentAreaPortfolio {
   grid-area: contentArea;
   overflow-y: auto;
   width: 75vw;
   margin-left: 4vw;
   display: grid;
+  row-gap: 3em;
 }
 
 .portfolioText {
@@ -801,5 +841,13 @@ code {
     align-content: center;
     justify-content: center;
     text-align: center;
+  }
+
+  .welcomeVid {
+    grid-area: img;
+    max-height: 50vh;
+    max-width: 50vw;
+    border-radius: 1em;
+    margin-left: 2vw;
   }
 }

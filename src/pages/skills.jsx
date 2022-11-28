@@ -29,9 +29,12 @@ class Skills extends Component {
       "C/C++",
       "Linux",
       "Node.js",
+      "Archimate",
+      "ITILv3",
+      "Usability evaluation"
     ],
 
-    wannalearnSkills: ["Archimate", "WPO", "SEO", "Python"],
+    wannalearnSkills: ["WPO", "SEO", "Python"],
 
     commonSkills: [
       "Lots of customer service experience",

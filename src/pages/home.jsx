@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import me from "../images/ME.jpg";
 import "../index.css";
 import { CSSTransition } from "react-transition-group";
+import welcome from "../videos/welcome.mov";
 
 class Home extends Component {
   state = {};
@@ -16,7 +17,10 @@ class Home extends Component {
           appear={true}
         >
           <div className="homeAreaContent">
-            <img className="me" src={me} alt="Me" />
+            {/*<img className="me" src={me} alt="Me" />*/}
+            <video className="welcomeVid" controls src={welcome} width="400" height="225" autoplay preload="auto">
+
+            </video>
             <div className="homeTextArea">
               <span className="hi">Hi there! I'm</span>
               <h2 className="name">TUOMAS HYTTINEN</h2>
