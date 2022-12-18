@@ -1,0 +1,12 @@
+@import "styles.css"; 
+
+.custom-cursor {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--color-primary-3);
+    z-index: 1000;
+    pointer-events: none; /*to prevent interferance*/
+    position: fixed;
+    border: 1px solid black;
+}

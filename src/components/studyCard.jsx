@@ -1,34 +1,36 @@
 import React, { Component } from "react";
 import { CSSTransition } from "react-transition-group";
 
+/*Done with the inline CSS for purpose of studying the methods*/
 class StudyCard extends Component {
   state = {};
 
   scBackground = {
-    backgroundColor: "rgba(131, 146, 155)",
+    backgroundColor: "var(--color-primary-3)",
     width: "25em",
     height: "10em",
     display: "flex",
     alignItems: "center",
     justifyItems: "space-around",
-    border: "1em solid rgba(131, 146, 155)",
+    border: "1em solid var(--color-primary-3)",
     borderRadius: "10px",
+    boxShadow: "1px 1px 2px var(--color-primary-1)"
   };
 
   scIconStyle = {
-    color: "white",
+    color: "var(--color-primary-1)",
     fontSize: "5em",
     display: "flex",
     alignItems: "center",
     justifyItems: "space-around",
-    backgroundColor: "#1F4B65",
+    backgroundColor: "var(--color-primary-0)",
     borderRadius: "50%",
-    border: "0.3em solid #1F4B65",
+    border: "0.3em solid var(--color-primary-0)",
   };
 
   scTextArea = {
-    background: "#5D8399",
-    border: "0.5em solid #5D8399",
+    background: "var(--color-primary-0)",
+    border: "0.5em solid var(--color-primary-0)",
     marginLeft: "1em",
     height: "8em",
     width: "23em",
@@ -39,6 +41,18 @@ class StudyCard extends Component {
     borderRadius: "10px",
   };
 
+  text = {
+    fontSize: "0.8em",
+    color: "var(--color-primary-1)",
+  };
+
+  header = {
+    color: "var(--color-primary-1)",
+    margin: "0em",
+    fontSize: "1em",
+    fontWeight: "bold",
+  };
+
   render() {
     return (
       <CSSTransition
@@ -47,23 +61,16 @@ class StudyCard extends Component {
         classNames="fade"
         appear={true}
       >
-        <div className="scBackground" style={this.scBackground}>
+        <div style={this.scBackground}>
           <i className={this.props.icon} style={this.scIconStyle}></i>
           <div style={this.scTextArea}>
-            <h4
-              style={{
-                color: "black",
-                margin: "0em",
-                fontSize: "1em",
-                fontWeight: "bold",
-              }}
-            >
+            <h4 style={this.header}>
               {this.props.school}
             </h4>
-            <p style={{ color: "black", margin: "0em", fontSize: "0.8em" }}>
+            <p style={this.text}>
               {this.props.years}
             </p>
-            <p style={{ color: "black", margin: "0em", fontSize: "0.92em" }}>
+            <p style={this.text}>
               {this.props.program}
             </p>
           </div>

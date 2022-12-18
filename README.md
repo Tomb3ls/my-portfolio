@@ -4,7 +4,7 @@
 This is the source code for my portfolio webpage as part of my work demonstration.
 
 Technologies used for this project:
-* ReactNative
+* React
 * Node.js
 * HTML
 * CSS3

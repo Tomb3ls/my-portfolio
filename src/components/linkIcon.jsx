@@ -5,7 +5,7 @@ class LinkIcon extends Component {
 
   render() {
     return (
-      <div className="linkIcon">
+      <div className="link-icon">
         <a href={this.props.url}>
           <i className={this.props.icon}></i>
         </a>

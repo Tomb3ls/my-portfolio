@@ -1,3 +1,6 @@
+import React from "react";
+
+/*Message me component for future use. -> Waiting for backend to complete.*/
 function MessageMe(props) {
   const handleSubmit = (event) => {
     event.preventDefault();
