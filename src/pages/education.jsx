@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import StudyCard from "../components/StudyCard";
+import StudyCard from "../components/StudyCard/StudyCard";
 import { CSSTransition } from "react-transition-group";
 
 class Education extends Component {

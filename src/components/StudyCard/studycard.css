@@ -1,0 +1,75 @@
+@import "../../styles.css";
+
+.study-card-bg {
+    position: relative;
+    z-index: 1;
+    
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: auto;
+    width: 23em;
+    
+    background-color: var(--color-primary-3);
+    border: 1em solid var(--color-primary-3);
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px var(--color-primary-1);
+  }
+
+  .study-card-bg > :nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .study-card-bg > div > i {
+    padding: 0;
+    margin: 0;
+    color: var(--color-primary-0);
+    font-size: 5em;
+    font-weight: 100;
+  }
+
+  .study-card-bg > :nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    
+    margin-left: 1em;
+    height: auto;
+    width: auto;
+    text-align: left;
+    word-break: break-all;
+
+    background: var(--color-primary-0);
+    border: 0.5em solid var(--color-primary-0);
+    border-radius: 10px;
+  }
+
+  .study-card-bg > div:nth-child(2) > h4 {
+    color: var(--color-primary-1);
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-weight: bold;
+  }
+
+  .study-card-bg > div:nth-child(2) > :nth-child(2) {
+    font-size: 0.8em;
+    font-style: italic;
+    color: var(--color-primary-1);
+    margin: 0;
+    padding-top: 0.25em;
+  }
+
+  .study-card-bg > div:nth-child(2) > :nth-child(3) {
+    font-size: 0.8em;
+    color: var(--color-primary-1);
+    margin: 0;
+    padding-top: 0.5em;
+  }
+
+
+  @media all and (max-width: 500px) {
+    .study-card-bg {
+        width: 80vw;
+    }
+  }

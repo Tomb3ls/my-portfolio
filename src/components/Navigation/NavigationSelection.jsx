@@ -25,7 +25,7 @@ function NavigationSelection(props) {
       >
         <i className={props.icon}></i>
         <MediaQuery minWidth={501}> 
-          <ReactTooltip id={props.name} place={props.tooltipPlace} effect="solid">
+          <ReactTooltip id={props.name} place={props.tooltipPlace} effect="solid" style={{position: "relative", zIndex: 1000}}>
             {props.name}
           </ReactTooltip>
         </MediaQuery>
