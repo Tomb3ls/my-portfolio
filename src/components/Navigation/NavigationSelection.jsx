@@ -1,10 +1,13 @@
 import ReactTooltip from "react-tooltip";
 import { NavLink } from "react-router-dom";
 import { CSSTransition } from "react-transition-group";
+import MediaQuery from "react-responsive";
 
 import "./navigation.css";
 
-/*Navigationbars selection icon which is able to change it's color when selected.*/
+/*Navigationbars selection icon which is able to change it's color when selected.
+* Tooltip hidden when width < 500.
+*/
 function NavigationSelection(props) {
   return (
     <CSSTransition
@@ -21,9 +24,11 @@ function NavigationSelection(props) {
         data-for={props.name}
       >
         <i className={props.icon}></i>
-        <ReactTooltip id={props.name} place={props.tooltipPlace} effect="solid">
-          {props.name}
-        </ReactTooltip>
+        <MediaQuery minWidth={501}> 
+          <ReactTooltip id={props.name} place={props.tooltipPlace} effect="solid">
+            {props.name}
+          </ReactTooltip>
+        </MediaQuery>
       </NavLink>
     </CSSTransition>
   );

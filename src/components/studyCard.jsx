@@ -7,8 +7,8 @@ class StudyCard extends Component {
 
   scBackground = {
     backgroundColor: "var(--color-primary-3)",
-    width: "25em",
-    height: "10em",
+    maxWidth: "25em",
+    maxHeight: "10em",
     display: "flex",
     alignItems: "center",
     justifyItems: "space-around",
