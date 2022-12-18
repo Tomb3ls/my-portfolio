@@ -1,25 +1,32 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.721441e7.css",
-    "main.js": "/my-portfolio/static/js/main.600d48b2.js",
-    "static/js/787.65557d19.chunk.js": "/my-portfolio/static/js/787.65557d19.chunk.js",
-    "static/media/welcome.mov": "/my-portfolio/static/media/welcome.7866632e77fbb0e6d168.mov",
-    "static/media/JEMO.jpg": "/my-portfolio/static/media/JEMO.568d30e9feba312863d4.jpg",
+    "main.css": "/my-portfolio/static/css/main.5f7fbdcf.css",
+    "main.js": "/my-portfolio/static/js/main.8e0d31dd.js",
+    "static/js/787.128fc6e9.chunk.js": "/my-portfolio/static/js/787.128fc6e9.chunk.js",
+    "static/media/KEIKKA3.jpg": "/my-portfolio/static/media/KEIKKA3.25a77d381bdcfb2ed14e.jpg",
+    "static/media/JEMO1.jpg": "/my-portfolio/static/media/JEMO1.568d30e9feba312863d4.jpg",
     "static/media/BIKE.jpg": "/my-portfolio/static/media/BIKE.fa714a5d1cb8cbcb60f5.jpg",
+    "static/media/JEMO2.jpg": "/my-portfolio/static/media/JEMO2.9817e0af9ed9eb645d76.jpg",
+    "static/media/DRUMS.jpg": "/my-portfolio/static/media/DRUMS.0238c6fe0642e9be989a.jpg",
     "static/media/STUDIO.jpg": "/my-portfolio/static/media/STUDIO.3cce288c57c5cbb2b82d.jpg",
-    "static/media/TAUSTA.JPG": "/my-portfolio/static/media/TAUSTA.f19813e71ce41ce94619.JPG",
     "static/media/ME.jpg": "/my-portfolio/static/media/ME.b38bd97836adf3d053dd.jpg",
+    "static/media/STUDIO2.jpg": "/my-portfolio/static/media/STUDIO2.8be6997c7e2b343702f7.jpg",
+    "static/media/KEIKKA2.jpg": "/my-portfolio/static/media/KEIKKA2.698c1b7399622abb7c08.jpg",
     "static/media/KEIKKA.jpg": "/my-portfolio/static/media/KEIKKA.0fd8e33a1e38a50fb891.jpg",
-    "static/media/bootstrap-icons.woff?": "/my-portfolio/static/media/bootstrap-icons.38c4d2499557ae0379fd.woff",
-    "static/media/bootstrap-icons.woff2?": "/my-portfolio/static/media/bootstrap-icons.2b56e79ae5013246de29.woff2",
+    "static/media/frontpage.png": "/my-portfolio/static/media/frontpage.2a091bf8333298924c8c.png",
+    "static/media/bootstrap-icons.woff?": "/my-portfolio/static/media/bootstrap-icons.6959d0d983ee318f8880.woff",
+    "static/media/bootstrap-icons.woff2?": "/my-portfolio/static/media/bootstrap-icons.b2e5aab643c6f0fd2da6.woff2",
     "static/media/exam.png": "/my-portfolio/static/media/exam.7b7b251e158831edf88f.png",
+    "static/media/job.png": "/my-portfolio/static/media/job.7731a6a2271acefc8896.png",
+    "static/media/lightbulb.png": "/my-portfolio/static/media/lightbulb.390657a9a36d31ff0087.png",
+    "static/media/connections.png": "/my-portfolio/static/media/connections.368c9193a9dd388a4891.png",
     "index.html": "/my-portfolio/index.html",
-    "main.721441e7.css.map": "/my-portfolio/static/css/main.721441e7.css.map",
-    "main.600d48b2.js.map": "/my-portfolio/static/js/main.600d48b2.js.map",
-    "787.65557d19.chunk.js.map": "/my-portfolio/static/js/787.65557d19.chunk.js.map"
+    "main.5f7fbdcf.css.map": "/my-portfolio/static/css/main.5f7fbdcf.css.map",
+    "main.8e0d31dd.js.map": "/my-portfolio/static/js/main.8e0d31dd.js.map",
+    "787.128fc6e9.chunk.js.map": "/my-portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.721441e7.css",
-    "static/js/main.600d48b2.js"
+    "static/css/main.5f7fbdcf.css",
+    "static/js/main.8e0d31dd.js"
   ]
 }
